@@ -1,0 +1,14 @@
+os: linux
+language: node_js
+install: skip
+notifications:
+jobs:
+  include:
+  - stage: main build and deploy
+    if: ((branch = main AND type != pull_request) AND fork = false)
+    script:
+    - npm install || travis_terminate 11
+    - npm run build || travis_terminate 1
+
+    after_success:
+    # - netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --dir ./dist/ || travis_terminate 1
