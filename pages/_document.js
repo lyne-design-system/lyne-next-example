@@ -1,6 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { parse } from 'node-html-parser';
-import { renderToString } from 'react-dom/server'
 
 const lyneComps = require("lyne-test/hydrate");
 
