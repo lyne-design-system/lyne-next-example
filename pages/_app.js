@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 const { defineCustomElements } = require("lyne-test/loader");
 
-function MyApp({ Component, pageProps }) {
+function MainApp({ Component, pageProps }) {
 
   useEffect(() => {
     defineCustomElements(window);
@@ -12,4 +12,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default MainApp
