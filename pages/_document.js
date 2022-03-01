@@ -24,7 +24,7 @@ class MyDocument extends Document {
     const headChildNodes = parsedHtml.getElementsByTagName('head')[0].childNodes;
     headChildNodes.forEach((childNode) => {
       if (childNode.rawTagName === 'style') {
-        styleContent += `${childNode.childNodes[0]._rawText}`;
+        styleContent += childNode.toString();
       }
     });
 
