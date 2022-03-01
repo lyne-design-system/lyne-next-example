@@ -3,7 +3,7 @@ import { parse } from 'node-html-parser';
 
 const lyneComps = require("lyne-test/hydrate");
 
-class MainDoc extends Document {
+class MyDocument extends Document {
 
   static async getInitialProps(ctx) {
 
@@ -24,19 +24,16 @@ class MainDoc extends Document {
     const headChildNodes = parsedHtml.getElementsByTagName('head')[0].childNodes;
     headChildNodes.forEach((childNode) => {
       if (childNode.rawTagName === 'style') {
-        styleContent += childNode.toString();
+        initialProps.styles = (
+          <>
+            {initialProps.styles}
+            <style sty-id={childNode.getAttribute('sty-id')}>{childNode.textContent}</style>
+          </>
+        );
       }
     });
 
-    return {
-      ...initialProps,
-      styles: (
-        <style>
-          {initialProps.styles}
-          {styleContent}
-        </style>
-      )
-    };
+    return initialProps;
   }
 
   render() {
@@ -52,4 +49,4 @@ class MainDoc extends Document {
   }
 }
 
-export default MainDoc;
+export default MyDocument
