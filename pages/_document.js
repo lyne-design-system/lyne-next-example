@@ -3,7 +3,7 @@ import { parse } from 'node-html-parser';
 
 const lyneComps = require("lyne-test/hydrate");
 
-class MyDocument extends Document {
+class MainDoc extends Document {
 
   static async getInitialProps(ctx) {
 
@@ -52,4 +52,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument
+export default MainDoc;
