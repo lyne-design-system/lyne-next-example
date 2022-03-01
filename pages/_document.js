@@ -10,26 +10,23 @@ class MyDocument extends Document {
     const initialProps = await Document.getInitialProps(ctx);
     let styleContent = '';
 
-    if (ctx.pathname === '/kitchensink1') {
+    // hydrate the received html via stencil's renderToString method
+    const renderedHtml = await lyneComps.renderToString(initialProps.html);
 
-      // hydrate the received html via stencil's renderToString method
-      const renderedHtml = await lyneComps.renderToString(initialProps.html);
+    // stencil is creating an fully fledged html document out of the component
+    // html after hydration. we need to parse it and extract the contents
+    // of the body.
+    const parsedHtml = parse(renderedHtml.html);
+    const renderedContent = parsedHtml.querySelector('#__next').toString();
+    initialProps.html = renderedContent;
 
-      // stencil is creating an fully fledged html document out of the component
-      // html after hydration. we need to parse it and extract the contents
-      // of the body.
-      const parsedHtml = parse(renderedHtml.html);
-      const renderedContent = parsedHtml.querySelector('#__next').toString();
-      initialProps.html = renderedContent;
-
-      // we need to extract the css from the head of the hydrated result.
-      const headChildNodes = parsedHtml.getElementsByTagName('head')[0].childNodes;
-      headChildNodes.forEach((childNode) => {
-        if (childNode.rawTagName === 'style') {
-          styleContent += `${childNode.childNodes[0]._rawText}`;
-        }
-      });
-    }
+    // we need to extract the css from the head of the hydrated result.
+    const headChildNodes = parsedHtml.getElementsByTagName('head')[0].childNodes;
+    headChildNodes.forEach((childNode) => {
+      if (childNode.rawTagName === 'style') {
+        styleContent += `${childNode.childNodes[0]._rawText}`;
+      }
+    });
 
     return {
       ...initialProps,
@@ -44,7 +41,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html class="js-focus-visible hydrated" data-js-focus-visible>
         <Head />
         <body>
           <Main />
