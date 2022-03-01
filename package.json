@@ -2,12 +2,14 @@
   "name": "lyne-next-example",
   "description": "Example as of how to use lyne components in nextJS",
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "export": "next export",
+    "start": "next start",
+    "preview-deploy": "npm run build && npm run export && npx serve out"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "~12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
@@ -15,6 +17,7 @@
     "express": "~4.17.3",
     "lyne-test": "~9.76.0",
     "netlify-cli": "~9.8.3",
+    "node-html-parser": "~5.2.0",
     "nodemon": "~2.0.15"
   },
   "author": "Lyne Team",
