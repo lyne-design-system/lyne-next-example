@@ -1,12 +1,16 @@
-import LyneButton from '../components/LyneButton';
-import LyneAccordion from '../components/LyneAccordion';
+import Link from 'next/link'
 
 export default function Home() {
 
   return (
     <div className="container">
-      <LyneButton />
-      <LyneAccordion />
+      <Link href="/kitchensink1">
+          <a>Kitchensink 1</a>
+        </Link>
+
+        <Link href="/kitchensink2">
+          <a>Kitchensink 2</a>
+        </Link>
     </div>
   )
 }
