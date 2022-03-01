@@ -18,10 +18,16 @@ To run the project locally, run
 npm run dev
 ```
 
-To build for production, run
+To build for production with ssr, run
 
 ```bash
 npm run build
+```
+
+To build for production with static assets, run
+
+```bash
+npm run build && npm run export
 ```
 
 ## Deployment
