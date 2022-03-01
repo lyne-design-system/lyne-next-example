@@ -6,7 +6,7 @@ export default function LyneButton() {
   useEffect(() => {
     button.addEventListener("lyne-button_click", (data) => {
 
-      console.log(`button click received with id: ${data.detail}`);
+      alert(`button click received with id: ${data.detail}`);
 
     });
   })
