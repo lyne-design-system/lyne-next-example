@@ -1,18 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import App from "next/app";
+const { defineCustomElements } = require("lyne-test/loader");
 
-export default class MyApp extends App {
-  componentDidMount() {
-    const {
-      defineCustomElements
-    } = require("lyne-test/loader");
+function MyApp({ Component, pageProps }) {
+
+  useEffect(() => {
     defineCustomElements(window);
-  }
-  render() {
-    const { Component, pageProps } = this.props;
+  });
 
-    return (
-      <Component {...pageProps} />
-    );
-  }
+  return (
+    <Component {...pageProps} />
+  )
 }
+
+export default MyApp
