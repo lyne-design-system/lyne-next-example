@@ -41,7 +41,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html class="js-focus-visible hydrated" data-js-focus-visible>
+      <Html className="js-focus-visible hydrated" data-js-focus-visible>
         <Head />
         <body>
           <Main />
