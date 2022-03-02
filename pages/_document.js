@@ -24,7 +24,6 @@ class MyDocument extends Document {
     const headChildNodes = parsedHtml.getElementsByTagName('head')[0].childNodes;
     headChildNodes.forEach((childNode) => {
       if (childNode.rawTagName === 'style') {
-        console.log(childNode.textContent);
         initialProps.styles = (
           <>
             {initialProps.styles}
@@ -45,7 +44,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html className="js-focus-visible hydrated" data-js-focus-visible>
-        <Head />
+        <Head>
+          <link as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Roman.woff2" rel="preload" type="font/woff2"></link>
+          <link as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Bold.woff2" rel="preload" type="font/woff2"></link>
+        </Head>
         <body>
           <Main />
           <NextScript />
