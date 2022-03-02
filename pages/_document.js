@@ -24,10 +24,16 @@ class MyDocument extends Document {
     const headChildNodes = parsedHtml.getElementsByTagName('head')[0].childNodes;
     headChildNodes.forEach((childNode) => {
       if (childNode.rawTagName === 'style') {
+        console.log(childNode.textContent);
         initialProps.styles = (
           <>
             {initialProps.styles}
-            <style sty-id={childNode.getAttribute('sty-id')}>{childNode.textContent}</style>
+            <style
+              sty-id={childNode.getAttribute('sty-id')}
+              dangerouslySetInnerHTML={{
+                __html: childNode.textContent
+              }}
+            />
           </>
         );
       }
