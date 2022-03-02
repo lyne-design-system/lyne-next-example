@@ -1,6 +1,10 @@
 export default function LyneAccordion() {
   return (
-    <lyne-accordion suppressHydrationWarning={true} only-one-open="">
+    <lyne-accordion
+      suppressHydrationWarning={true}
+      only-one-open=""
+      non-white-background
+    >
       <lyne-accordion-item
         suppressHydrationWarning={true}
         event-id="id1"
