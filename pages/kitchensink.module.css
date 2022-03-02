@@ -1,10 +1,15 @@
 .container {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .componentContainer {
-    background-color: #f6f6f6;
-    position: relative;
-    padding: 1rem;
-    border-radius: 8px;
+  background-color: #f6f6f6;
+  position: relative;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.autocomplete {
+  position: relative;
+  z-index: 1;
 }
