@@ -44,7 +44,7 @@ export default function Kitchensink1() {
       </div>
 
       <h2>LyneAutocomplete</h2>
-      <div className={styles.componentContainer}>
+      <div className={`${styles.componentContainer} ${styles.autocomplete}`}>
         <LyneAutocomplete />
       </div>
 
