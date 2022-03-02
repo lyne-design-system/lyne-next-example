@@ -9,6 +9,10 @@
   border-radius: 8px;
 }
 
+.componentTitle {
+  margin-top: 4rem;
+}
+
 .autocomplete {
   position: relative;
   z-index: 1;

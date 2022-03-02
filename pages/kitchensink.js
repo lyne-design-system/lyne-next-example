@@ -33,102 +33,102 @@ export default function Kitchensink1() {
       
       <h1>Kitchensink 1</h1>
 
-      <h2>LyneButton</h2>
+      <h2 className={styles.componentTitle}>LyneButton</h2>
       <div className={styles.componentContainer}>
         <LyneButton />
       </div>
 
-      <h2>LyneAccordion</h2>
+      <h2 className={styles.componentTitle}>LyneAccordion</h2>
       <div className={styles.componentContainer}>
         <LyneAccordion />
       </div>
 
-      <h2>LyneAutocomplete</h2>
+      <h2 className={styles.componentTitle}>LyneAutocomplete</h2>
       <div className={`${styles.componentContainer} ${styles.autocomplete}`}>
         <LyneAutocomplete />
       </div>
 
-      <h2>LyneCardBadge</h2>
+      <h2 className={styles.componentTitle}>LyneCardBadge</h2>
       <div className={styles.componentContainer}>
         <LyneCardBadge />
       </div>
 
-      <h2>LyneCardProduct</h2>
+      <h2 className={styles.componentTitle}>LyneCardProduct</h2>
       <div className={styles.componentContainer}>
         <LyneCardProduct />
       </div>
 
-      <h2>LyneImage</h2>
+      <h2 className={styles.componentTitle}>LyneImage</h2>
       <div className={styles.componentContainer}>
         <LyneImage />
       </div>
 
-      <h2>LyneInputError</h2>
+      <h2 className={styles.componentTitle}>LyneInputError</h2>
       <div className={styles.componentContainer}>
         <LyneInputError />
       </div>
 
-      <h2>LyneJourneyHeader</h2>
+      <h2 className={styles.componentTitle}>LyneJourneyHeader</h2>
       <div className={styles.componentContainer}>
         <LyneJourneyHeader />
       </div>
 
-      <h2>LyneLink</h2>
+      <h2 className={styles.componentTitle}>LyneLink</h2>
       <div className={styles.componentContainer}>
         <LyneLink />
       </div>
 
-      <h2>LyneLinkList</h2>
+      <h2 className={styles.componentTitle}>LyneLinkList</h2>
       <div className={styles.componentContainer}>
         <LyneLinkList />
       </div>
 
-      <h2>LynePanel</h2>
+      <h2 className={styles.componentTitle}>LynePanel</h2>
       <div className={styles.componentContainer}>
         <LynePanel />
       </div>
 
-      <h2>LynePearlChain</h2>
+      <h2 className={styles.componentTitle}>LynePearlChain</h2>
       <div className={styles.componentContainer}>
         <LynePearlChain />
       </div>
 
-      <h2>LyneSbbClock</h2>
+      <h2 className={styles.componentTitle}>LyneSbbClock</h2>
       <div className={styles.componentContainer}>
         <LyneSbbClock />
       </div>
 
-      <h2>LyneSbbLogo</h2>
+      <h2 className={styles.componentTitle}>LyneSbbLogo</h2>
       <div className={styles.componentContainer}>
         <LyneSbbLogo />
       </div>
 
-      <h2>LyneSbbSignet</h2>
+      <h2 className={styles.componentTitle}>LyneSbbSignet</h2>
       <div className={styles.componentContainer}>
         <LyneSbbSignet />
       </div>
 
-      <h2>LyneTeaserHero</h2>
+      <h2 className={styles.componentTitle}>LyneTeaserHero</h2>
       <div className={styles.componentContainer}>
         <LyneTeaserHero />
       </div>
 
-      <h2>LyneTextInput</h2>
+      <h2 className={styles.componentTitle}>LyneTextInput</h2>
       <div className={styles.componentContainer}>
         <LyneTextInput />
       </div>
 
-      <h2>LyneTimetable</h2>
+      <h2 className={styles.componentTitle}>LyneTimetable</h2>
       <div className={styles.componentContainer}>
         <LyneTimetable />
       </div>
 
-      <h2>LyneTimetableRow</h2>
+      <h2 className={styles.componentTitle}>LyneTimetableRow</h2>
       <div className={styles.componentContainer}>
         <LyneTimetableRow />
       </div>
 
-      <h2>LyneTitle</h2>
+      <h2 className={styles.componentTitle}>LyneTitle</h2>
       <div className={styles.componentContainer}>
         <LyneTitle />
       </div>
