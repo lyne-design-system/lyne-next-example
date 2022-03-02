@@ -5,7 +5,7 @@ export default function LyneButton() {
       textsize="s"
       title-level="2"
       title-text="Help &amp; Contact"
-      variant="negative"
+      variant="positive"
       suppressHydrationWarning={true}
     >
       <li className="link-list__item" slot="link-list__item">
@@ -13,7 +13,7 @@ export default function LyneButton() {
           href-value="https://www.sbb.ch/de/hilfe-und-kontakt/erstattung-entschaedigung/rueckerstattung-von-billetten.html"
           text="Rückerstattungen"
           text-size="s"
-          variant="negative"
+          variant="positive"
         ></lyne-link>
       </li>
       <li className="link-list__item" slot="link-list__item">
@@ -21,7 +21,7 @@ export default function LyneButton() {
           href-value="https://www.sbb.ch/de/hilfe-und-kontakt/erstattung-entschaedigung/rueckerstattung-von-billetten.html"
           text="Fundbüro"
           text-size="s"
-          variant="negative"
+          variant="positive"
         ></lyne-link>
       </li>
       <li className="link-list__item" slot="link-list__item">
@@ -29,7 +29,7 @@ export default function LyneButton() {
           href-value="https://www.sbb.ch/de/hilfe-und-kontakt/erstattung-entschaedigung/rueckerstattung-von-billetten.html"
           text="Beschwerden"
           text-size="s"
-          variant="negative"
+          variant="positive"
         ></lyne-link>
       </li>
       <li className="link-list__item" slot="link-list__item">
@@ -37,7 +37,7 @@ export default function LyneButton() {
           href-value="https://www.sbb.ch/de/hilfe-und-kontakt/erstattung-entschaedigung/rueckerstattung-von-billetten.html"
           text="Lob aussprechen"
           text-size="s"
-          variant="negative"
+          variant="positive"
         ></lyne-link>
       </li>
       <li className="link-list__item" slot="link-list__item">
@@ -45,7 +45,7 @@ export default function LyneButton() {
           href-value="https://www.sbb.ch/de/hilfe-und-kontakt/erstattung-entschaedigung/rueckerstattung-von-billetten.html"
           text="Sachbeschädigung melden"
           text-size="s"
-          variant="negative"
+          variant="positive"
         ></lyne-link>
       </li>
     </lyne-link-list>
