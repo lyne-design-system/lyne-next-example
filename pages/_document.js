@@ -45,8 +45,8 @@ class MyDocument extends Document {
     return (
       <Html className="js-focus-visible hydrated" data-js-focus-visible>
         <Head>
-          <link as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Roman.woff2" rel="preload" type="font/woff2"></link>
-          <link as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Bold.woff2" rel="preload" type="font/woff2"></link>
+          <link crossorigin="" as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Roman.woff2" rel="preload" type="font/woff2"></link>
+          <link crossorigin="" as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Bold.woff2" rel="preload" type="font/woff2"></link>
         </Head>
         <body>
           <Main />
