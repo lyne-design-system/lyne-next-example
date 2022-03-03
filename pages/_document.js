@@ -20,6 +20,9 @@ class MyDocument extends Document {
     const renderedContent = parsedHtml.querySelector('#__next').toString();
     initialProps.html = renderedContent;
 
+    // additionally, we need to get some attributes from the hydrated html tag
+    initialProps.htmlAttrs = parsedHtml.getElementsByTagName('html')[0]._attrs;
+
     // we need to extract the css from the head of the hydrated result.
     const headChildNodes = parsedHtml.getElementsByTagName('head')[0].childNodes;
     headChildNodes.forEach((childNode) => {
@@ -43,7 +46,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html className="js-focus-visible hydrated" data-js-focus-visible>
+      <Html {...this.props.htmlAttrs}>
         <Head>
           <link crossorigin="" as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Roman.woff2" rel="preload" type="font/woff2"></link>
           <link crossorigin="" as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Bold.woff2" rel="preload" type="font/woff2"></link>
