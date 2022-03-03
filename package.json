@@ -6,6 +6,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
+    "lint": "next lint",
     "preview-ssr-deploy": "npm run build && npm start",
     "preview-static-deploy": "npm run build && npm run export && npx serve out"
   },
@@ -15,6 +16,8 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
     "express": "~4.17.3",
     "lyne-test": "~9.76.0",
     "netlify-cli": "~9.8.3",
