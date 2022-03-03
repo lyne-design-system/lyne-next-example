@@ -13,13 +13,18 @@ class MyDocument extends Document {
     // hydrate the received html via stencil's renderToString method
     const renderedHtml = await lyneComps.renderToString(initialProps.html);
 
+    // 1. get hydrated html
+    // --------------------
     // stencil is creating an fully fledged html document out of the component
     // html after hydration. we need to parse it and extract the contents
     // of the body.
     const parsedHtml = parse(renderedHtml.html);
     const renderedContent = parsedHtml.querySelector('#__next').toString();
+
     initialProps.html = renderedContent;
 
+    // 2. get hydrated attrs
+    // --------------------
     // additionally, we need to get some attributes from the hydrated html tag
     const htmlAttrs = parsedHtml.getElementsByTagName('html')[0]._attrs;
 
@@ -33,6 +38,8 @@ class MyDocument extends Document {
 
     initialProps.htmlAttrs = cleanAttrs;
 
+    // 3. get hydrated css
+    // --------------------
     // we need to extract the css from the head of the hydrated result.
     const headChildNodes = parsedHtml.getElementsByTagName('head')[0].childNodes;
     headChildNodes.forEach((childNode) => {
