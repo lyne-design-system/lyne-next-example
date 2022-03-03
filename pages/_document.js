@@ -21,7 +21,17 @@ class MyDocument extends Document {
     initialProps.html = renderedContent;
 
     // additionally, we need to get some attributes from the hydrated html tag
-    initialProps.htmlAttrs = parsedHtml.getElementsByTagName('html')[0]._attrs;
+    const htmlAttrs = parsedHtml.getElementsByTagName('html')[0]._attrs;
+
+    // we need to map the class to className....
+    const cleanAttrs = {};
+    for (const key in htmlAttrs) {
+      let cleanKey = key === 'class' ? 'className': key;
+
+      cleanAttrs[cleanKey] = htmlAttrs[key];
+    }
+
+    initialProps.htmlAttrs = cleanAttrs;
 
     // we need to extract the css from the head of the hydrated result.
     const headChildNodes = parsedHtml.getElementsByTagName('head')[0].childNodes;
@@ -48,8 +58,8 @@ class MyDocument extends Document {
     return (
       <Html {...this.props.htmlAttrs}>
         <Head>
-          <link crossorigin="" as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Roman.woff2" rel="preload" type="font/woff2"></link>
-          <link crossorigin="" as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Bold.woff2" rel="preload" type="font/woff2"></link>
+          <link crossOrigin="" as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Roman.woff2" rel="preload" type="font/woff2"></link>
+          <link crossOrigin="" as="font" href="https://cdn.app.sbb.ch/fonts/v1_6_subset/SBBWeb-Bold.woff2" rel="preload" type="font/woff2"></link>
         </Head>
         <body>
           <Main />
