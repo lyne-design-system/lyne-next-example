@@ -21,7 +21,7 @@
     "express": "~4.17.3",
     "lyne-test": "~9.76.0",
     "netlify-cli": "~9.12.3",
-    "node-html-parser": "~5.2.0",
+    "node-html-parser": "~5.3.2",
     "nodemon": "~2.0.15"
   },
   "author": "Lyne Team",
