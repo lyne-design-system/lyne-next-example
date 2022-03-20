@@ -20,7 +20,7 @@
     "eslint-config-next": "12.1.0",
     "express": "~4.17.3",
     "lyne-test": "~9.77.0",
-    "netlify-cli": "~9.13.0",
+    "netlify-cli": "~9.13.3",
     "node-html-parser": "~5.3.3",
     "nodemon": "~2.0.15"
   },
