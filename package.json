@@ -22,7 +22,7 @@
     "lyne-test": "^10.8.0",
     "netlify-cli": "~9.13.6",
     "node-html-parser": "~5.3.3",
-    "nodemon": "~2.0.15"
+    "nodemon": "~2.0.16"
   },
   "author": "Lyne Team",
   "license": "MIT"
