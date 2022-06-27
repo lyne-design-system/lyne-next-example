@@ -1,6 +1,6 @@
-export default function LyneButton() {
+export default function SbbImage() {
   return (
-    <lyne-image
+    <sbb-image
       alt=""
       caption='Mit Ihrem Halbtax profitieren Sie zudem von attraktiven Zusatzleistungen und Rabatten. Wenn Sie unter 25 Jahre jung sind, können Sie zu Ihrem Halbtax das beliebte <a href="https://www.sbb.ch/abos-billette/abonnemente/gleis-7-freie-fahrt-ab-19-uhr.html#jahrg_nger_halbtax">Gleis 7</a> dazu kaufen.'
       copyright=""
@@ -16,6 +16,6 @@ export default function LyneButton() {
       lqip="true"
       performance-mark=""
       suppressHydrationWarning={true}
-    ></lyne-image>
+    ></sbb-image>
   );
 };

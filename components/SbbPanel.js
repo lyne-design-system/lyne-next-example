@@ -1,9 +1,9 @@
-export default function LyneButton() {
+export default function SbbPanel() {
   return (
-    <lyne-panel
+    <sbb-panel
       button-text="Sample button text"
       text="Sample panel text"
       suppressHydrationWarning={true}
-    ></lyne-panel>
+    ></sbb-panel>
   );
 };

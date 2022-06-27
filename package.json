@@ -16,10 +16,10 @@
     "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "@sbb-esta/lyne-components": "0.1.2",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
     "express": "~4.18.1",
-    "lyne-test": "^10.8.1",
     "netlify-cli": "~10.3.3",
     "node-html-parser": "~5.3.3",
     "nodemon": "~2.0.16"

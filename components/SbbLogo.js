@@ -1,10 +1,10 @@
-export default function LyneButton() {
+export default function SbbLogo() {
   return (
-    <lyne-sbb-logo
+    <sbb-logo
       protective-room="ideal"
       variant="black-on-white"
       suppressHydrationWarning={true}
-    ></lyne-sbb-logo>
+    ></sbb-logo>
 
 
   );

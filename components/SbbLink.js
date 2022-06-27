@@ -1,6 +1,6 @@
-export default function LyneButton() {
+export default function SbbLink() {
   return (
-    <lyne-link
+    <sbb-link
       href-value="https://github.com/lyne-design-system/lyne-components"
       icon="chevron-small-right-small"
       icon-flip=""
@@ -25,6 +25,6 @@ export default function LyneButton() {
           ></path>
         </svg>
       </span>
-    </lyne-link>
+    </sbb-link>
   );
 };

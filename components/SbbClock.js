@@ -1,9 +1,9 @@
-export default function LyneButton() {
+export default function SbbClock() {
   return (
-    <lyne-sbb-clock
+    <sbb-clock
       initial-time="now"
       suppressHydrationWarning={true}
-    ></lyne-sbb-clock>
+    ></sbb-clock>
 
 
   );

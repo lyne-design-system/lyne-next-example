@@ -1,6 +1,6 @@
-export default function LyneButton() {
+export default function SbbLinkList() {
   return (
-    <lyne-link-list
+    <sbb-link-list
       list-direction="vertical"
       textsize="s"
       title-level="2"
@@ -9,45 +9,45 @@ export default function LyneButton() {
       suppressHydrationWarning={true}
     >
       <li className="link-list__item" slot="link-list__item">
-        <lyne-link
+        <sbb-link
           href-value="https://www.sbb.ch/de/hilfe-und-kontakt/erstattung-entschaedigung/rueckerstattung-von-billetten.html"
           text="Rückerstattungen"
           text-size="s"
           variant="positive"
-        ></lyne-link>
+        ></sbb-link>
       </li>
       <li className="link-list__item" slot="link-list__item">
-        <lyne-link
+        <sbb-link
           href-value="https://www.sbb.ch/de/hilfe-und-kontakt/erstattung-entschaedigung/rueckerstattung-von-billetten.html"
           text="Fundbüro"
           text-size="s"
           variant="positive"
-        ></lyne-link>
+        ></sbb-link>
       </li>
       <li className="link-list__item" slot="link-list__item">
-        <lyne-link
+        <sbb-link
           href-value="https://www.sbb.ch/de/hilfe-und-kontakt/erstattung-entschaedigung/rueckerstattung-von-billetten.html"
           text="Beschwerden"
           text-size="s"
           variant="positive"
-        ></lyne-link>
+        ></sbb-link>
       </li>
       <li className="link-list__item" slot="link-list__item">
-        <lyne-link
+        <sbb-link
           href-value="https://www.sbb.ch/de/hilfe-und-kontakt/erstattung-entschaedigung/rueckerstattung-von-billetten.html"
           text="Lob aussprechen"
           text-size="s"
           variant="positive"
-        ></lyne-link>
+        ></sbb-link>
       </li>
       <li className="link-list__item" slot="link-list__item">
-        <lyne-link
+        <sbb-link
           href-value="https://www.sbb.ch/de/hilfe-und-kontakt/erstattung-entschaedigung/rueckerstattung-von-billetten.html"
           text="Sachbeschädigung melden"
           text-size="s"
           variant="positive"
-        ></lyne-link>
+        ></sbb-link>
       </li>
-    </lyne-link-list>
+    </sbb-link-list>
   );
 };

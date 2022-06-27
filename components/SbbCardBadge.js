@@ -1,10 +1,10 @@
-export default function LyneButton() {
+export default function SbbCardBadge() {
   return (
-    <lyne-card-badge
+    <sbb-card-badge
       accessibility-label="Super saver sales ticket."
       appearance="primary"
       is-discount=""
       suppressHydrationWarning={true}
-    ></lyne-card-badge>
+    ></sbb-card-badge>
   );
 };
