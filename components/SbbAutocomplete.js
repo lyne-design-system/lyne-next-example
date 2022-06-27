@@ -1,6 +1,6 @@
-export default function LyneButton() {
+export default function SbbAutocomplete() {
   return (
-    <lyne-autocomplete
+    <sbb-autocomplete
       suppressHydrationWarning={true}
       autocomplete-id="sample-id"
       event-id="sample-id"
@@ -12,6 +12,6 @@ export default function LyneButton() {
       input-placeholder="sample placeholder"
       items='[{"text": "Bern"},{"text": "Bern, Hauptbahnhof"},{"text": "Bern (Marzilibahn)"},{"text": "Bern Marzili"},{"text": "Bern Matte"},{"text": "Bern Münsterplattform"},{"text": "Bern Europaplatz, Bahnhof"},{"text": "Bern, Bahnhof"},{"text": "Bern, Brunnadernstrasse"},{"text": "Bern, Bärenplatz"}]'
       min-chars="0"
-    ></lyne-autocomplete>
+    ></sbb-autocomplete>
   );
 };

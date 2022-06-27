@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { parse } from 'node-html-parser';
 
-const lyneComps = require("lyne-test/hydrate");
+const lyneComps = require("@sbb-esta/lyne-components/hydrate");
 
 class MyDocument extends Document {
 

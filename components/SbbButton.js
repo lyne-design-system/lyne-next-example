@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
-export default function LyneButton() {
+export default function SbbButton() {
   let button;
 
   useEffect(() => {
-    button.addEventListener("lyne-button_click", (data) => {
+    button.addEventListener("sbb-button_click", (data) => {
 
       alert(`button click received with id: ${data.detail}`);
 
@@ -12,7 +12,7 @@ export default function LyneButton() {
   })
 
   return (
-    <lyne-button
+    <sbb-button
       ref={elem => button = elem}
       suppressHydrationWarning={true}
       event-id="sample-button"

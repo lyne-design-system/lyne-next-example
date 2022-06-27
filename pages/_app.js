@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-const { defineCustomElements } = require("lyne-test/loader");
+const { defineCustomElements } = require("@sbb-esta/lyne-components/loader");
 import '../styles.css'
 
 function MainApp({ Component, pageProps }) {

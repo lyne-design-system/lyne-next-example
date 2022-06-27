@@ -1,6 +1,6 @@
-export default function LyneButton() {
+export default function SbbTeaserHero() {
   return (
-    <lyne-teaser-hero
+    <sbb-teaser-hero
       button-text="Button text"
       image-loading="eager"
       image-src="https://cdn.img.sbb.ch/content/dam/internet/lyne/Billetkontrolle.jpg"
@@ -9,7 +9,7 @@ export default function LyneButton() {
       open-in-new-window="false"
       text="Panel text"
       suppressHydrationWarning={true}
-    ></lyne-teaser-hero>
+    ></sbb-teaser-hero>
 
 
   );

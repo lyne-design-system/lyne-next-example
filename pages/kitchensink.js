@@ -1,25 +1,25 @@
 import Link from 'next/link';
 
-import LyneAccordion from '../components/LyneAccordion';
-import LyneAutocomplete from '../components/LyneAutocomplete';
-import LyneButton from '../components/LyneButton';
-import LyneCardBadge from '../components/LyneCardBadge';
-import LyneCardProduct from '../components/LyneCardProduct';
-import LyneImage from '../components/LyneImage';
-import LyneInputError from '../components/LyneInputError';
-import LyneJourneyHeader from '../components/LyneJourneyHeader';
-import LyneLink from '../components/LyneLink';
-import LyneLinkList from '../components/LyneLinkList';
-import LynePanel from '../components/LynePanel';
-import LynePearlChain from '../components/LynePearlChain';
-import LyneSbbClock from '../components/LyneSbbClock';
-import LyneSbbLogo from '../components/LyneSbbLogo';
-import LyneSbbSignet from '../components/LyneSbbSignet';
-import LyneTeaserHero from '../components/LyneTeaserHero';
-import LyneTextInput from '../components/LyneTextInput';
-import LyneTimetable from '../components/LyneTimetable';
-import LyneTimetableRow from '../components/LyneTimetableRow';
-import LyneTitle from '../components/LyneTitle';
+import SbbAccordion from '../components/SbbAccordion';
+import SbbAutocomplete from '../components/SbbAutocomplete';
+import SbbButton from '../components/SbbButton';
+import SbbCardBadge from '../components/SbbCardBadge';
+import SbbCardProduct from '../components/SbbCardProduct';
+import SbbImage from '../components/SbbImage';
+import SbbInputError from '../components/SbbInputError';
+import SbbJourneyHeader from '../components/SbbJourneyHeader';
+import SbbLink from '../components/SbbLink';
+import SbbLinkList from '../components/SbbLinkList';
+import SbbPanel from '../components/SbbPanel';
+import SbbPearlChain from '../components/SbbPearlChain';
+import SbbClock from '../components/SbbClock';
+import SbbLogo from '../components/SbbLogo';
+import SbbSignet from '../components/SbbSignet';
+import SbbTeaserHero from '../components/SbbTeaserHero';
+import SbbTextInput from '../components/SbbTextInput';
+import SbbTimetable from '../components/SbbTimetable';
+import SbbTimetableRow from '../components/SbbTimetableRow';
+import SbbTitle from '../components/SbbTitle';
 
 import styles from './kitchensink.module.css'
 
@@ -30,107 +30,107 @@ export default function Kitchensink1() {
       <Link href="/">
         <a>Back to home</a>
       </Link>
-      
+
       <h1>Kitchensink 1</h1>
 
       <h2 className={styles.componentTitle}>LyneButton</h2>
       <div className={styles.componentContainer}>
-        <LyneButton />
+        <SbbButton />
       </div>
 
       <h2 className={styles.componentTitle}>LyneAccordion</h2>
       <div className={styles.componentContainer}>
-        <LyneAccordion />
+        <SbbAccordion />
       </div>
 
       <h2 className={styles.componentTitle}>LyneAutocomplete</h2>
       <div className={`${styles.componentContainer} ${styles.autocomplete}`}>
-        <LyneAutocomplete />
+        <SbbAutocomplete />
       </div>
 
       <h2 className={styles.componentTitle}>LyneCardBadge</h2>
       <div className={styles.componentContainer}>
-        <LyneCardBadge />
+        <SbbCardBadge />
       </div>
 
       <h2 className={styles.componentTitle}>LyneCardProduct</h2>
       <div className={styles.componentContainer}>
-        <LyneCardProduct />
+        <SbbCardProduct />
       </div>
 
       <h2 className={styles.componentTitle}>LyneImage</h2>
       <div className={styles.componentContainer}>
-        <LyneImage />
+        <SbbImage />
       </div>
 
       <h2 className={styles.componentTitle}>LyneInputError</h2>
       <div className={styles.componentContainer}>
-        <LyneInputError />
+        <SbbInputError />
       </div>
 
       <h2 className={styles.componentTitle}>LyneJourneyHeader</h2>
       <div className={styles.componentContainer}>
-        <LyneJourneyHeader />
+        <SbbJourneyHeader />
       </div>
 
       <h2 className={styles.componentTitle}>LyneLink</h2>
       <div className={styles.componentContainer}>
-        <LyneLink />
+        <SbbLink />
       </div>
 
       <h2 className={styles.componentTitle}>LyneLinkList</h2>
       <div className={styles.componentContainer}>
-        <LyneLinkList />
+        <SbbLinkList />
       </div>
 
       <h2 className={styles.componentTitle}>LynePanel</h2>
       <div className={styles.componentContainer}>
-        <LynePanel />
+        <SbbPanel />
       </div>
 
       <h2 className={styles.componentTitle}>LynePearlChain</h2>
       <div className={styles.componentContainer}>
-        <LynePearlChain />
+        <SbbPearlChain />
       </div>
 
       <h2 className={styles.componentTitle}>LyneSbbClock</h2>
       <div className={styles.componentContainer}>
-        <LyneSbbClock />
+        <SbbClock />
       </div>
 
       <h2 className={styles.componentTitle}>LyneSbbLogo</h2>
       <div className={styles.componentContainer}>
-        <LyneSbbLogo />
+        <SbbLogo />
       </div>
 
       <h2 className={styles.componentTitle}>LyneSbbSignet</h2>
       <div className={styles.componentContainer}>
-        <LyneSbbSignet />
+        <SbbSignet />
       </div>
 
       <h2 className={styles.componentTitle}>LyneTeaserHero</h2>
       <div className={styles.componentContainer}>
-        <LyneTeaserHero />
+        <SbbTeaserHero />
       </div>
 
       <h2 className={styles.componentTitle}>LyneTextInput</h2>
       <div className={styles.componentContainer}>
-        <LyneTextInput />
+        <SbbTextInput />
       </div>
 
       <h2 className={styles.componentTitle}>LyneTimetable</h2>
       <div className={styles.componentContainer}>
-        <LyneTimetable />
+        <SbbTimetable />
       </div>
 
       <h2 className={styles.componentTitle}>LyneTimetableRow</h2>
       <div className={styles.componentContainer}>
-        <LyneTimetableRow />
+        <SbbTimetableRow />
       </div>
 
       <h2 className={styles.componentTitle}>LyneTitle</h2>
       <div className={styles.componentContainer}>
-        <LyneTitle />
+        <SbbTitle />
       </div>
     </div>
   )

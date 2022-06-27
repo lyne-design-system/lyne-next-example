@@ -1,6 +1,6 @@
-export default function LyneButton() {
+export default function SbbTextInput() {
   return (
-    <lyne-text-input
+    <sbb-text-input
       debounce-input-event="0"
       event-id=""
       icon=""
@@ -20,7 +20,7 @@ export default function LyneButton() {
       label="Email address"
       label-visible=""
       suppressHydrationWarning={true}
-    ></lyne-text-input>
+    ></sbb-text-input>
 
 
   );

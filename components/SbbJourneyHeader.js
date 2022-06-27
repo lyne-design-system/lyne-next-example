@@ -1,6 +1,6 @@
-export default function LyneButton() {
+export default function SbbJourneyHeader() {
   return (
-    <lyne-journey-header
+    <sbb-journey-header
       appearance="primary"
       destination="Loèche-les-Bains"
       journey-header-id=""
@@ -8,6 +8,6 @@ export default function LyneButton() {
       origin="La Chaux de Fonds"
       size="5"
       suppressHydrationWarning={true}
-    ></lyne-journey-header>
+    ></sbb-journey-header>
   );
 };

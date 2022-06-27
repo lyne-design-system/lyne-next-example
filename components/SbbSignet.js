@@ -1,10 +1,10 @@
-export default function LyneButton() {
+export default function SbbSignet() {
   return (
-    <lyne-sbb-signet
+    <sbb-signet
       protective-room="align-bottom-right"
       variant="default"
       suppressHydrationWarning={true}
-    ></lyne-sbb-signet>
+    ></sbb-signet>
 
 
   );
